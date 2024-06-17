@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #dd1b59, #1a73e8);
+  padding: 10px 20px;
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.join-us {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.join-us h1 {
+  background: #ffe6f1;
+  padding: 20px;
+  margin-bottom: 0;
+  color: #dd1b59;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: -20px;
+  z-index: 1;
+  position: relative;
+}
+
+.contact-form img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.form-container {
+  margin-left: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.contact-form form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #dd1b59;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form form button:hover {
+  background: #c2184b;
+}
+
+.campaign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.campaign img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.campaign-text {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.campaign-text h2 {
+  color: #1a73e8;
+}
+
+.campaign-text p {
+  color: #555;
+}
+
+footer {
+  background: #162447;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer .footer-content div {
+  flex: 1;
+  margin: 10px;
+}
+
+footer .footer-content h3 {
+  border-bottom: 2px solid #dd1b59;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+footer .footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-content ul li {
+  margin: 5px 0;
+}
+
+footer .footer-content ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-bottom {
+  margin-top: 20px;
+}
+
+footer .footer-bottom p {
+  margin: 0;
+}
