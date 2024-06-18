@@ -5,46 +5,34 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  background-color: #f0f0f0;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  width: 100px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-}
 
 .hero {
   /* background: center /cover url("./images/hero-bg.webp"); */
   color: white;
   text-align: center;
   padding: 50px 20px;
-min-height: 14vw;
+min-height: 30vw;
+display:flex;
+align-items: center;
+justify-content: center;
 }
 @media screen and (max-width:800px) {
   .hero::before{
-    min-height: 40%;
+    min-height: 25rem
   }
-  
+  p{
+    text-align: justify !important;
+    padding: 2rem 0px;
+  }
+  .icon-card{
+    width: 80vw !important;
+  }
+  .icon-card p{
+    text-align: center !important;
+  }
+  h4{
+    margin-top: 1.5rem;
+  }
 }
 .hero::before {
   content: '';
