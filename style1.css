@@ -4,42 +4,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #dd1b59, #1a73e8);
-  padding: 10px 20px;
-  color: white;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-}
-
-header .logo img {
-  height: 50px;
-  margin-right: 10px;
-}
-
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-header nav ul li {
-  margin: 0 15px;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 main {
   padding: 20px;
   background: #f4f4f4;
@@ -51,13 +15,28 @@ main {
 }
 
 .contact-form {
-  background: white;
+  /* background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: inline-block;
+  background: beige;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items:center;
+  margin-top: 3rem;
+  justify-content: space-evenly;
 }
-
+.form-text{
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.contact-img img{
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .contact-form h2 {
   margin-top: 0;
   color: #dd1b59;
@@ -79,6 +58,8 @@ main {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  width: 20rem;
+  max-width: 90vw;
 }
 
 .contact-form form button {
@@ -93,55 +74,4 @@ main {
 
 .contact-form form button:hover {
   background: #c2184b;
-}
-
-footer {
-  background: #162447;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-footer .footer-content div {
-  flex: 1;
-  margin: 10px;
-}
-
-footer .footer-content h3 {
-  border-bottom: 2px solid #dd1b59;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
-
-footer .footer-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer .footer-content ul li {
-  margin: 5px 0;
-}
-
-footer .footer-content ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-footer .footer-content ul li a:hover {
-  text-decoration: underline;
-}
-
-footer .footer-bottom {
-  margin-top: 20px;
-}
-
-footer .footer-bottom p {
-  margin: 0;
 }

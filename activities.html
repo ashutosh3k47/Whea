@@ -53,11 +53,9 @@
     
     <title>WHEA - Our Projects</title>
     <link rel="stylesheet" href="activities.css" />
+    <link preload rel="stylesheet" href="./univ.css">
     <style>
-    .img-fix {
-      /* make sure the image is not streached  */
-      object-fit: cover !important;
-    }
+   
       /* Dropdown Menu Styles */
       .dropdown {
         position: relative;
@@ -94,33 +92,38 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="header-content">
-        <img src="logo.png" alt="WHEA Logo" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="volunteers.html">Volunteers</a></li>
-            <li><a href="/joinus.html">Join WHEA</a></li>
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Activities</a>
-              <div class="dropdown-content">
-                <a href="photos.html">Photos</a>
-                <a href="projects.html">Projects</a>
-              </div>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+    <header class="top-nav header">
+      <div class="logo">
+        <a href="/">
+          <img src="/images/logo-text.webp" alt="WHEA Logo" />
+        </a> 
+          <div>
+              <!-- <span>WHEA</span><br /> -->
+              <!-- <span>Women Health & Education Association</span> -->
+          </div>
       </div>
-    </header>
+      <nav class="nav">
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+              <div class='menu-button'></div>
+          </label>
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="volunteers.html">Volunteers</a></li>
+              <li><a href="/joinus.html">JOIN WHEA</a></li>
+              <li><a href="activities.html">Activities</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+
+  </header>
     <main>
-      <section class="projects">
-        <h1>Our Projects</h1>
+      <section class="projectsc welcome-section" style="background-color: #f3f3f3;">
+        <h1 style="text-align: center; margin-top: 3rem;">Our Projects</h1>
         <div class="project">
           <div class="project-image left">
-            <img src="women_empowerment.jpg" alt="Women Empowerment" />
+            <img src="./images/woemrn-empowerment.webp" alt="Women Empowerment" />
           </div>
           <div class="project-text">
             <h2>Women Empowerment</h2>
@@ -141,7 +144,7 @@
         </div>
         <div class="project">
           <div class="project-image right">
-            <img src="education.jpg" alt="Education" />
+            <img src="./images/projects-education.webp" alt="Education" />
           </div>
           <div class="project-text">
             <h2>Education</h2>
@@ -163,7 +166,7 @@
         </div>
         <div class="project">
           <div class="project-image left">
-            <img src="skills_development.jpg" alt="Skills Development" />
+            <img src="./images/projects-skill-dev.webp" alt="Skills Development" />
           </div>
           <div class="project-text">
             <h2>Skills Development</h2>
@@ -184,48 +187,54 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-content">
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Our Projects</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="/joinus.html">Join Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h3>Contact Us</h3>
-          <p>INDORE</p>
-          <p>Email: info@ua_wild.in</p>
-        </div>
-        <div class="footer-about">
-          <h3>About WHEA</h3>
-          <ul>
-            <li><a href="/soon.html">Our Vision</a></li>
-            <li><a href="/soon.html">Our Mission</a></li>
-            <li><a href="/volunteers.html#team">WHEA Team</a></li>
-            <li><a href="/soon.html">Financial</a></li>
-          </ul>
-        </div>
-        <div class="footer-campaigns">
-          <h3>Our Campaigns</h3>
-          <ul>
-            <li><a href="/soon.html">Our Approach</a></li>
-            <li><a href="/soon.html">Let’s talk about periods</a></li>
-            <li><a href="/soon.html">Puri padhi desh ki bhadai</a></li>
-            <li><a href="/soon.html">Our impact</a></li>
-          </ul>
+        <div class="footer-item">
+          <img src="./images/logo-text.webp" width="200px" style="border-radius: 10px; border:.5rem solid white" ="footer-logo women-empowerment">
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2024 WHEA | All rights reserved | Designed and developed by
-          KANTHARIYA TECHNOLOGIES
-        </p>
-      </div>
-    </footer>
+        <div class="footer-content">
+          <div class="footer-links footer-item">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/projects.html">Our Projects</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/joinus.html">Join Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact footer-item">
+            <h3>Contact Us</h3>
+            <p>INDORE</p>
+            <p>Email: info@ua_wild.in</p>
+          </div>
+          <div class="footer-about footer-item">
+            <h3>About WHEA</h3>
+            <ul>
+              <li><a href="/soon.html">Our Vision</a></li>
+              <li><a href="/soon.html">Our Mission</a></li>
+              <li><a href="/volunteers.html#team">WHEA Team</a></li>
+              <li><a href="/soon.html">NGO Partner</a></li>
+              <li><a href="/soon.html">Company Partner</a></li>
+            </ul>
+          </div>
+          <div class="footer-campaigns footer-item">
+            <h3>Our Campaigns</h3>
+            <ul>
+              <li><a href="/soon.html">Our Approach</a></li>
+              <li><a href="/soon.html">"नई दिशा, नया शहर"</a></li>
+              <li><a href="/soon.html">Humara gao humara desh</a></li>
+              <li><a href="/soon.html">Our impact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 WHEA | All rights reserved | Designed and developed by
+            KANTHARIYA TECHNOLOGIES
+          </p>
+        </div>
+      </footer>
   </body>
 </html>
