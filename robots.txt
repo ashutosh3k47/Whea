@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /ass/
+Disallow: /images/
+Disallow: /404.html
+Disallow: /nav.html
+
+Sitemap: /sitemap.xml

@@ -56,207 +56,7 @@
   <meta property="twitter:image" content="images/ngo-promo-banner.webp">
   <title>WHEA NGO - Home Page</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* * {
-      outline: salmon solid 2px;
-    } */
-
-
-    .icon-card {
-      min-height: 15vw;
-      position: relative;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: all ease-in-out;
-    }
-
-
-    .icon-card p {
-      background: #0000004f;
-      color: #fff;
-      /* To ensure the text is visible */
-      position: absolute;
-      bottom: 0rem;
-      left: 0;
-      /* Align the paragraph to the left */
-      right: 0;
-      /* Align the paragraph to the right */
-      margin: 0;
-      /* Remove default margins */
-      text-align: center;
-      /* Center the text */
-      padding: 0.5rem;
-      /* Add some padding for better readability */
-    }
-
-
-
-    /* our org section */
-    .org-container {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-    }
-
-    .org-text {
-      max-width: 60vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
-
-    .org-text ul {
-      list-style: none;
-      text-align: left;
-    }
-
-    .org-text li {
-      background-image: url("favicon.ico");
-      background-size: 16px 16px;
-      /* set the size of the icon */
-      background-repeat: no-repeat;
-      padding-left: 30px;
-      /* add some padding to the left of the text */
-    }
-
-
-    .org-img {
-      position: relative;
-    }
-
-    .org-img img {
-      border-radius: 1rem;
-    }
-
-    .org-img::before {
-      content: '';
-      height: 80%;
-      width: 80%;
-      position: absolute;
-      background: #e8194f;
-      inset: 0;
-      left: -1.5rem;
-      border-radius: 1rem;
-      z-index: -1;
-    }
-
-
-
-    .slideshow-container {
-      height: 40rem;
-    }
-
-
-    /* card section before footer */
-    .card-container {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .card {
-      background: #ffebeb;
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 30rem;
-      justify-content: center;
-      border-radius: .5rem;
-      overflow: hidden;
-    }
-
-    .card-link,
-    .card-heading {
-      color: #19488e;
-      text-decoration: none;
-      font-weight: bolder;
-      letter-spacing: 1.2px;
-      font-size: 1.1rem;
-    }
-
-    .card-link {
-      font-size: .9rem;
-    }
-
-    .img {
-      max-width: 10rem;
-      overflow: hidden;
-      text-align: center;
-
-    }
-
-    .img img {
-      height: 100%;
-      max-height: 16rem;
-    }
-
-    .card-link::after {
-      content: ' >>';
-    }
-
-    .card-txt {
-      max-width: 15rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      padding: 0px 13px;
-    }
-
-    .icon-card:hover,
-    .icon-card:focus .icon-card:active {
-      transform: scale(1.2);
-      transition: all .5s ease-in-out;
-    }
-
-    @media screen and (max-width:480px) {
-      .icon-card {
-        min-width: 50vw;
-        min-height: 50vw;
-      }
-
-      .img {
-        max-width: 80vw;
-        margin-top: 1rem;
-      }
-    }
-
-    .flex-container-wrap {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 2rem 1rem;
-      flex-wrap: wrap;
-    }
-
-    .flex-box {
-      padding: 1rem 3rem;
-      min-width: 20rem;
-      max-width: 30rem;
-      background: #e8f5ff;
-      box-shadow: 1rem 2.5rem 6.5rem -2.5rem black;
-      margin-bottom: 4rem;
-    }
-
-    .flex-box h3 {
-      color: #19488e;
-    }
-
-    /* partners logo */
-    .flex-content {
-      padding: 1rem;
-      /* height: 10rem; */
-      width: 10rem;
-      border-radius: 1rem;
-      border: 1px solid #19488E;
-      ;
-    }
-
-    .flex-content img {
-      width: 100%;
-    }
-  </style>
-  <link rel="stylesheet" href="univ.css">
+  <link preload rel="stylesheet" href="univ.css">
 </head>
 
 <body>
@@ -535,6 +335,59 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-item">
+        <img src="./images/logo-text.webp" width="200px" style="border-radius: 10px; border:.5rem solid white" ="footer-logo women-empowerment">
+      </div>
+    </div>
+      <div class="footer-content">
+        <div class="footer-links footer-item">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/projects.html">Our Projects</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/joinus.html">Join Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact footer-item">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>INDORE</li>
+            <li>Email: <a href="mailto:contact@whea.in">contact@whea.in</a></li>
+            <li>Email: <a href="mailto:admin@whea.in">admin@whea.in</a></li>
+          </ul>
+        </div>
+        <div class="footer-about footer-item">
+          <h3>About WHEA</h3>
+          <ul>
+            <li><a href="/soon.html">Our Vision</a></li>
+            <li><a href="/soon.html">Our Mission</a></li>
+            <li><a href="/volunteers.html#team">WHEA Team</a></li>
+            <li><a href="/#NGO-Partners-WHEA">NGO Partner</a></li>
+            <li><a href="/#Company-Partners-WHEA">Company Partner</a></li>
+          </ul>
+        </div>
+        <div class="footer-campaigns footer-item">
+          <h3>Our Campaigns</h3>
+          <ul>
+            <li><a href="/soon.html">Our Approach</a></li>
+            <li><a href="/soon.html">"नई दिशा, नया शहर"</a></li>
+            <li><a href="/soon.html">Humara gao humara desh</a></li>
+            <li><a href="/soon.html">Our impact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 WHEA | All rights reserved | Designed and developed by
+          KANTHARIYA TECHNOLOGIES
+        </p>
+      </div>
+    </footer>
+
+  <!-- <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-item">
         <img src="./images/logo-text.webp" width="200px"
           style="border-radius: 10px; border:.5rem solid white"="footer-logo women-empowerment">
       </div>
@@ -584,7 +437,7 @@
         KANTHARIYA TECHNOLOGIES
       </p>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="script.js"></script>
   <script>
