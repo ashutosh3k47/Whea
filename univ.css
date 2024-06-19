@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .header {
   background-color: #f0f0f0;
@@ -21,7 +21,7 @@
   list-style: none;
   display: flex;
   background: #f0f0f0;
-  z-index: 2;
+  z-index: 10;
 }
 
 .nav ul li {
@@ -120,8 +120,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    }
-
+  }
 
   #menu-toggle ~ .menu li {
     height: 0;
@@ -157,6 +156,26 @@
 
 /* beg of footer */
 
+@media screen and (max-width: 500px) {
+  .quick-links {
+    min-width: 40vw;
+  }
+}
+.quick-links ul,
+.quick-links li,
+.quick-links p,
+.quick-links h3 {
+  display: block !important;
+  text-align: left !important;
+  max-width: max-content;
+}
+
+.quick-links {
+  padding: .8rem;
+  min-width: 10rem;
+  border-radius: 1rem;
+  border:.2rem solid rgba(198, 195, 213, 0.356);
+}
 .footer {
   background-color: #162447;
   color: white;
@@ -208,27 +227,26 @@
   padding: 0 1rem;
 }
 
-
 /* headin with underline */
-.welcome-section h1{
+.welcome-section h1 {
   font-size: 2rem;
-  color: #19488E;
+  color: #19488e;
   position: relative;
   margin-bottom: 6rem;
 }
-.welcome-section h1::after{
-content: '';
-background: red;
-border-radius: 1rem;
-height: .16rem;
-max-width: 30vw;
-position: absolute;
-inset: 0;
-top: 3.9rem;
-margin: auto;
-/* left: 35%; */
+.welcome-section h1::after {
+  content: "";
+  background: red;
+  border-radius: 1rem;
+  height: 0.16rem;
+  max-width: 30vw;
+  position: absolute;
+  inset: 0;
+  top: 3.9rem;
+  margin: auto;
+  /* left: 35%; */
 }
-.welcome-section p{
+.welcome-section p {
   font-size: 1.3rem;
   max-width: 70vw;
   margin: auto;
@@ -335,8 +353,61 @@ body {
   transform: rotate(0deg);
 }
 
-@media screen and (max-width:400px) {
+/* @media screen and (max-width:400px) {
   *{
     transform: translateX(0) !important;
   }
+} */
+
+
+/* css despo fix? */
+footer {
+  background: #162447;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer .footer-content div {
+  flex: 1;
+  margin: 10px;
+}
+
+footer .footer-content h3 {
+  border-bottom: 2px solid #dd1b59;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+footer .footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-content ul li {
+  margin: 5px 0;
+}
+
+footer .footer-content ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-bottom {
+  margin-top: 20px;
+}
+
+footer .footer-bottom p {
+  margin: 0;
 }

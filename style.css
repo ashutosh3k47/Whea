@@ -16,13 +16,16 @@ display:flex;
 align-items: center;
 justify-content: center;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:500px) {
   .hero::before{
     min-height: 25rem
   }
+  .organisation{
+    padding: 0px !important;
+  }
   p{
     text-align: justify !important;
-    padding: 2rem 0px;
+    padding: 1rem .5rem!important;
   }
   .icon-card{
     width: 80vw !important;
@@ -32,6 +35,9 @@ justify-content: center;
   }
   h4{
     margin-top: 1.5rem;
+  }
+  .org-text{
+    max-width: 80vw !important;
   }
 }
 .hero::before {
