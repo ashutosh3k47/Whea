@@ -15,13 +15,13 @@
 }
 
 .logo img {
-  width: 100px;
+  width: 53px;
 }
-
 .nav ul {
   list-style: none;
   display: flex;
   background: #f0f0f0;
+  z-index: 2;
 }
 
 .nav ul li {
@@ -232,9 +232,7 @@ margin: auto;
   font-size: 1.3rem;
   max-width: 70vw;
   margin: auto;
-  text-align: justify;
 }
-
 
 /* pop-up experiment */
 /* .pop {
@@ -335,4 +333,10 @@ body {
 
 .rotate-in.visible {
   transform: rotate(0deg);
+}
+
+@media screen and (max-width:400px) {
+  *{
+    transform: translateX(0) !important;
+  }
 }
