@@ -17,7 +17,7 @@
  > index
  > about
  > volunteers
- > 
+ > --everything that's on nav
 
  # pages to be worked : 
  > join
