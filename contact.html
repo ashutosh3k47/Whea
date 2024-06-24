@@ -54,6 +54,35 @@
     <title>Contact Us - WHEA NGO</title>
     <link rel="stylesheet" href="style1.css" />
     <link preload rel="stylesheet" href="univ.css">
+
+    <style>
+      .loading-container {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 1000;
+    }
+
+    .loading-spinner {
+      border: 4px solid #f3f3f3; /* Light grey */
+      border-top: 4px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    </style>
  
   </head>
   <body>
@@ -76,7 +105,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="volunteers.html">Volunteers</a></li>
-              <li><a href="/joinus.html">JOIN WHEA</a></li>
+              <li><a href="./joinus.html">JOIN WHEA</a></li>
               <li><a href="activities.html">Activities</a></li>
               <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -97,16 +126,21 @@
               <img src="./images/collab.webp" alt="let's collab">
             </div>
           </div>
-          <div class="form-form">
-            <form>
-              <input type="text" name="name" placeholder="Name" />
-            <input type="text" name="contact" placeholder="Contact Number" />
-            <input type="email" name="email" placeholder="Email" />
-            <textarea name="comments" placeholder="Comments"></textarea>
-            <button type="submit">Submit</button>
-          </form>
+          <div class="form-container">
+            <form name="contactt" method="POST">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="phonenumber" placeholder="Contact Number" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea name="message" placeholder="Comments"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+            <!-- Loading spinner -->
+            <div class="loading-container" id="loadingContainer">
+              <div class="loading-spinner"></div>
+            </div>
+          </div>
         </div>
-        </div>
+        
       </section>
     </main>
     <footer class="footer">
@@ -124,6 +158,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="volunteers.html">Volunteers</a></li>
             <li><a href="/joinus.html">Join WHEA</a></li>
+            <li><a href="/photos.html">Gallery</a></li>
             <li><a href="activities.html">Activities</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -132,8 +167,8 @@
           <h3>Contact Us</h3>
           <ul>
             <li>INDORE</li>
-            <li>Email: <a href="mailto:contact@whea.in">contact@whea.in</a></li>
-            <li>Email: <a href="mailto:admin@whea.in">admin@whea.in</a></li>
+            <li>Email: <a href="mailto:info@whea.in">info@whea.in</a></li>
+            <!-- <li>Email: <a href="mailto:admin@whea.in">admin@whea.in</a></li> -->
           </ul>
         </div>
         <div class="quick-links  about-whea">
@@ -144,7 +179,7 @@
             <li><a href="/volunteers.html#team">WHEA Team</a></li>
              </ul>
         </div>
-        <div class="quick-links our-campaigns">
+        <!-- <div class="quick-links our-campaigns">
           <h3>Our Campaigns</h3>
             <ul>
               <li><a href="/soon.html">Our Approach</a></li>
@@ -153,7 +188,7 @@
               <li><a href="/soon.html">Our impact</a></li>
             </ul>
         </div>
-      </div>
+      </div> -->
       <div class="footer-bottom">
         <p>
           Copyright © 2024 WHEA | All rights reserved | Designed and developed
@@ -161,5 +196,33 @@
         </p>
       </div>
     </footer>
+
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxuuYd1bf0zGke2e1-j9C1uXn3e-UasrhavQk7K76QB9ouvaA-Mv-7Wy1k80m7PJD29Mw/exec';
+      const form = document.forms['contactt'];
+      const loadingContainer = document.getElementById('loadingContainer');
+  
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+  
+        // Show loading spinner
+        loadingContainer.style.display = 'flex';
+  
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            // Hide loading spinner
+            loadingContainer.style.display = 'none';
+            alert("Thank you! Your form has been submitted successfully.");
+            form.reset(); // Optional: Reset form after submission
+          })
+          .catch(error => {
+            loadingContainer.style.display = 'none';
+            console.error('Error!', error.message);
+            alert('Oops! Something went wrong.');
+          });
+      });
+    </script>
   </body>
 </html>

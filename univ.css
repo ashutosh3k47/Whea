@@ -16,6 +16,8 @@
 
 .logo img {
   width: 53px;
+  height: auto;
+  border-radius: .5rem;
 }
 .nav ul {
   list-style: none;
